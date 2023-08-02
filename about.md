@@ -4,15 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi! I'm Prithvi Nathan. I'm an undergraduate student at the University of Illinois at Urbana-Champaign studying mixed-signal integrated circuit design engineering. My primary interests are high-speed electrical links, optical I/O, and brain-computer interfaces. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
+I plan on using this blog to post about circuit design, my reading lists, miscellaneous thoughts. 
 
 [jekyll-organization]: https://github.com/jekyll
