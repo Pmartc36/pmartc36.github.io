@@ -9,6 +9,7 @@ layout: home
 ---
 
 ![picture](/uploads/pfp.png)
+<img src=https://pmartc36.github.io/uploads/pfp.png width="200" height="200">
 
 ## About Me:
 
