@@ -8,9 +8,7 @@
 layout: home
 ---
 
-![picture](/uploads/pfp.png)
-<img src=https://pmartc36.github.io/uploads/pfp.png width="200" height="200">
-
+![picture](/uploads/pfp.png){: width="250"}
 ## About Me:
 
 I'm an first year MS-PhD student of Electrical Engineering at UIUC studying analog IC design with a focus on transceivers for optical links. I also have a strong interest in silicon-photonics and electronic/photonic co-design. My advisor is [Pavan Hanumolu](https://ece.illinois.edu/about/directory/faculty/hanumolu).
