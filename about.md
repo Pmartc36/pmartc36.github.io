@@ -14,5 +14,3 @@ The predominant goal in my life is to work on making ubiqutious access to comput
 I plan on occasionally posting some takes on the circuits/photonics/networking world in general on this site. 
 
 Oh and I'm an avid fan of 4X strategy games, reading/drawing atlases and maps, and burritos. 
-
-[jekyll-organization]: https://github.com/jekyll
