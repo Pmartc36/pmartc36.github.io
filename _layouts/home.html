@@ -3,59 +3,43 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
-  {{ content }}
+  <section class="hero">
+    <h1 class="hero-name">{{ site.title | escape }}</h1>
+    <p class="hero-role">{{ site.description | escape }}</p>
+  </section>
 
+  <section class="about">
+    <div class="about-body">
+      <p class="section-label">About</p>
+      {{ content }}
+    </div>
+    <img src="{{ '/uploads/pfp.png' | relative_url }}" alt="{{ site.author.name | escape }}" class="about-photo">
+  </section>
 
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
+  <section class="research">
+    <p class="section-label">Research</p>
+    <ul class="research-list">
+      <li>Analog IC design for high-speed transceivers in optical links</li>
+      <li>Silicon photonics and electronic/photonic co-design</li>
       <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        <span>Wideband ADC architectures for neural recording &mdash;
+          <a href="{{ '/uploads/Design_of_VCO_Based_Continuous_Time_Delta_Sigma_ADCs_For_Neural_Recording_Applications.pdf' | relative_url }}">paper &nearr;</a>
+        </span>
       </li>
-      {%- endfor -%}
     </ul>
+  </section>
 
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-
-  {%- endif -%}
+  <section class="recent-writing">
+    <p class="section-label">Writing</p>
+    {%- assign posts = site.posts | limit: 5 -%}
+    {%- for post in posts -%}
+    <div class="post-row">
+      <time class="post-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <a class="post-title-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </div>
+    {%- endfor -%}
+    <a class="view-all" href="{{ '/writing/' | relative_url }}">All posts &rarr;</a>
+  </section>
 
 </div>
