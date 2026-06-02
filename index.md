@@ -2,10 +2,10 @@
 layout: home
 ---
 
-I'm a first-year MS-PhD student in Electrical Engineering at [UIUC](https://ece.illinois.edu), working on analog IC design with a focus on transceivers for optical links. My advisor is [Pavan Hanumolu](https://ece.illinois.edu/about/directory/faculty/hanumolu).
+I'm an AMS IC Design Engineer working at Coherent Corp. based in Champaign, Illinois where I work on broadband AFEs for pluggable optics. I received my Masters and Bachelors degree in Electrical Engineering at UIUC from Prof. Pavan Kumar Hanumolu. I have previously worked as an AMS Engineer at Ayar Labs and AMD with a focus on co-packaged optics and SerDes. 
 
-Over my undergraduate career, my interests moved from radiology to [analog ICs for brain-computer interfaces](./uploads/Design_of_VCO_Based_Continuous_Time_Delta_Sigma_ADCs_For_Neural_Recording_Applications.pdf) to high-speed SERDES — driven by the same question each time: how do we move more information, faster, at less cost?
+I grew up in the Northern Virginia area and love 4X strategy games, maps/atlases, and bean and cheese burritos.
 
-I think the most consequential near-term problem in computing is bandwidth. Optical interconnects are a promising direction, and that's where my research lives.
+This website contains my personal notes regarding hardware design as well as my current hobbies and interests.
 
-Outside the lab: 4X strategy games, drawing atlases, good burritos.
+
